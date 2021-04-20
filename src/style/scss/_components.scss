@@ -1,0 +1,44 @@
+/* Mixins */
+
+@mixin bg-skew($height, $top, $bottom) {
+    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    height: $height;
+    clip-path: polygon(0 $top, 100% 0%, 100% $bottom, 0% 100%);
+}
+
+/* Variables */
+
+$font__primary: 'IBM Plex Mono', monospace;
+$font__secondary: 'IBM Plex Sans', sans-serif;
+
+$font__mob-s: 14px;
+$font__mob-m: 16px;
+$font__mob-l: 36px;
+$font__h2: 48px;
+
+$font__desk-s: 16px;
+$font__desk-m: 18px;
+$font__desk-l: 64px;
+
+$font__topic: 24px;
+
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+/* Modifiers */
+
+.text-white {
+    color: white;
+}
+
+.text-linethrough {
+    text-decoration: line-through;
+}
+
+.palebluedot {
+    display: block;
+}
