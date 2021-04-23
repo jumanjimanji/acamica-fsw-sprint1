@@ -1,8 +1,8 @@
 /* Mixins */
 
 @mixin bg-skew($height, $top, $bottom) {
-    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-    width: 100vw;
+    background: linear-gradient(225deg, $color__primary-light 0%, $color__primary-dark 100%);
+    width: 100%;
     z-index: -1;
     position: absolute;
     height: $height;
@@ -25,6 +25,11 @@ $font__desk-l: 64px;
 
 $font__topic: 24px;
 
+$color__primary-light: #0000FF;
+$color__secondary: #060A24;
+$color__primary-dark: #0000a3;
+$color__tertiary: #00F0B8;
+
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
@@ -41,4 +46,8 @@ $desktop-width: 1024px;
 
 .palebluedot {
     display: block;
+}
+
+.bluedot {
+    color: $color__primary-light;
 }

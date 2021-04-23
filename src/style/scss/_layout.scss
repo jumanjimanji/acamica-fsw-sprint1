@@ -24,7 +24,7 @@ footer {
 
 .nav__menu {
     display: flex;
-    background: #0000EC;
+    background: $color__primary-light;
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
@@ -60,13 +60,13 @@ footer {
 }
 
 .nav__item:hover {
-    background: lighten(#0000EC, 20);
-    color: #00F3BB;
+    background: lighten($color__primary-light, 20);
+    color: $color__tertiary;
     text-decoration: line-through;
 }
 
 .nav__item:active {
-    color: rgba(6, 10, 36, 0.5);
+    color: rgba($color__secondary, 0.5);
     text-decoration: line-through;
 }
 
@@ -83,7 +83,7 @@ footer {
 }
 
 .toggle:hover {
-    background: #cecece;
+    background: lighten($color__secondary, 80);
 }
 
 /* Layout Containers */
@@ -168,13 +168,14 @@ h1 {
     margin-top: 15%;
 }
 
-.button__novedades {
+.novedades__button {
     margin-bottom: 67px;
 }
 
 .footer__flex {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 1% 5%;
 }
 
@@ -267,7 +268,7 @@ h1 {
     }
 
     .nav__item {
-        color: black;
+        color: $color__secondary;
         visibility: visible;
         opacity: 1;
     }
@@ -284,7 +285,7 @@ h1 {
         display: inline;
     }
 
-    .main__conocemas {
+    .main__button {
         margin-left: 200px;
         margin-bottom: 10px;
     }
@@ -312,7 +313,7 @@ h1 {
         font-size: $font__desk-s;
         margin-top: 40px;
         width: max-content;
-        box-shadow: inset 15vw 0 6vw -5vw #00F0B8;
+        box-shadow: inset 15vw 0 6vw -5vw $color__tertiary;
         padding: 0 59px;
         line-height: 3rem;
     }

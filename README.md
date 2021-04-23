@@ -13,8 +13,6 @@ Los breakpoints establecidos son:
 - Tablet: 768px
 - Desktop: 1024px
 
-
-
 ## Mantenimiento
 
 Para modificar el contenido de los distintos archivos de estilos el comando del observador de SASS será:
