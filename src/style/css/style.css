@@ -17,6 +17,12 @@
   color: #0000FF;
 }
 
+iframe {
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
